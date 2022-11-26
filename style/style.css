@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    background-image: url(../img/Rectangle\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 30px;
+    padding-left: 640px;
+    justify-content: flex-end;
+}
+
+header ul{
+    width: 594px;
+    
+}
+
+header li a{
+    padding: 20px 25px;
+    background-color: rgba(196, 196, 196, 1);
+    color: #000;
+    border-radius: 0 35px 0 35px;
+}
+
+header ul li .active{
+    background-color: rgba(121, 179, 49, 1);
+    color: #fff;
+}
+
+header li a:hover{
+    background-color: rgba(121, 179, 49, 1);
+    color: #fff;
+}
+ /*----------------- main----------------------- */
+
+.mart{
+    width: 530px;
+    height: 190px;
+    margin: 109px auto auto 700px;
+}
+
+@keyframes triali{
+    0%{left: 0; top: 0;}
+    25%{left: 530px; top: 0;}
+    50%{left: 530px; top: 190px;}
+    75%{left: 0; top: 190px;}
+    100%{left: 0;top: 0;}
+}
+
+.wre{
+    width: 32px;
+    height: 32px;
+    background-color: #42dd2d;
+    border-radius: 50%;
+    position: relative;
+    animation: triali 10s infinite;
+}
+
+.mart p{
+    text-align: center;
+}
+
+.first{
+    margin: 20px;
+    font-size: 18px;
+}
+.second{
+    font-size: 36px;
+}
+
+.statia{
+    width: 1000px;
+    /* background-color: #42dd2d; */
+    margin: 300px 36px 40px 300px;
+    position: relative;
+}
+
+.toti{
+    width: 3px;
+    height: 430px;
+    background-color: rgba(196, 196, 196, 1);
+    margin: 0 auto;
+}
+
+.article{
+    width: 50%;
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+}
+.article p{
+    font-size: 18px;
+    width: 420px;
+}
+
+.fotoli{
+    width: 70px;
+    height: 70px;
+    border-radius: 0 35px 0 35px;
+    background-color: rgba(196, 196, 196, 1) ;
+}
+
+.right{
+    transform: rotate(90deg);
+}
+
+.article1{
+    left: 50%;
+    top: 70px;
+}
+
+.article2{
+    top: 188px ;
+}
+
+.article3{
+    left: 50%;
+    top: 298px ;
+}
+
+.article:hover .fotoli{
+    background-color: rgba(121, 179, 49, 1);
+}
+
+.article:hover .info{
+    color: rgba(121, 179, 49, 1);
+}
+
+@media only screen and (max-width: 1024px) {
+    body{
+        background-position-x: -100px ;
+    }
+
+    header{
+        padding-left: 216px;
+        padding-top: 50px;
+    }
+    .mart{
+        margin-left: 350px;
+    }
+    .statia {
+        width: 500px;
+        margin-left: 300px;
+    }
+    .article{
+        width: 100%;
+    }
+    .article1, .article3{
+        flex-direction: row-reverse;
+        left: 0;
+    }
+    .right{
+        transform: rotate(0);
+    }
+    .toti{
+        margin-left: 100%;
+    }
+
+  }
